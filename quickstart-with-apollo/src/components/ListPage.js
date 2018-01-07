@@ -34,7 +34,7 @@ class ListPage extends React.Component {
         <div className='w-100 flex flex-wrap' style={{maxWidth: 1150}}>
           <Link
             to='/create'
-            className='ma3 box new-post br2 flex flex-column items-center justify-center ttu fw6 f20 black-30 no-underline'
+            className='ma3 box new-post br2 flex flex-column items-center justify-center ttu fw6 f2 black-30 no-underline'
           >
             <img
               src={require('../assets/plus.svg')}
