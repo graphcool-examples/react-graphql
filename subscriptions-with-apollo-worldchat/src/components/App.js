@@ -15,7 +15,7 @@ const serviceId = ``
 const httpLink = createHttpLink({ uri: `https://api.graph.cool/simple/v1/${serviceId}` })
 
 const wsLink = new WebSocketLink({
-  uri: `wss://subscriptions.graph.cool/v1/${serviceId}`,
+  uri: `wss://subscriptions.us-west-2.graph.cool/v1/${serviceId}`,
   options: {
     reconnect: true
   }
