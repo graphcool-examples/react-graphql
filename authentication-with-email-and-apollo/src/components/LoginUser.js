@@ -11,7 +11,7 @@ class CreateLogin extends React.Component {
   }
 
   render () {
-    if (this.props.data.loading) {
+    if (this.props.loggedInUserQuery.loading) {
 
       return (
         <div className='w-100 pa4 flex justify-center'>
@@ -21,7 +21,7 @@ class CreateLogin extends React.Component {
     }
 
     // redirect if user is logged in
-    if (this.props.data.loggedInUser.id) {
+    if (this.props.loggedInUserQuery.loggedInUser.id) {
       console.warn('already logged in')
       this.props.history.replace('/')
     }
