@@ -132,16 +132,16 @@ class WorldChat extends Component {
       `,
       variables: null,
       updateQuery: (previousState, {subscriptionData}) => {
-        if (subscriptionData.Location.mutation === 'CREATED') {
-          const newLocation = subscriptionData.Location.node
+        if (subscriptionData.data.Location.mutation === 'CREATED') {
+          const newLocation = subscriptionData.data.Location.node
           const locations = previousState.allLocations.concat([newLocation])
           return {
             allLocations: locations,
           }
         }
-        else if (subscriptionData.Location.mutation === 'UPDATED') {
+        else if (subscriptionData.data.Location.mutation === 'UPDATED') {
           const locations = previousState.allLocations.slice()
-          const updatedLocation = subscriptionData.Location.node
+          const updatedLocation = subscriptionData.data.Location.node
           const oldLocationIndex = locations.findIndex(location => {
             return updatedLocation.id === location.id
           })

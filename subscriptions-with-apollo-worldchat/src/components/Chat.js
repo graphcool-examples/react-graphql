@@ -63,7 +63,7 @@ class Chat extends Component {
         }
       `,
       updateQuery: (previousState, {subscriptionData}) => {
-        const newMessage = subscriptionData.Message.node
+        const newMessage = subscriptionData.data.Message.node
         const messages = previousState.allMessages.concat([newMessage])
         return {
           allMessages: messages
