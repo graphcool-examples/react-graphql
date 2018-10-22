@@ -127,7 +127,7 @@ subscription {
 }
 ```
 
-Then, in a different tab you can send a mutation to trigger the mutation:
+Then, in a different tab you can send a mutation to trigger the subscription:
 
 ```graphql
 mutation {
