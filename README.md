@@ -2,13 +2,13 @@
 
 Code examples & starter kits to see how React works with GraphQL and other technologies.
 
+<p align="center"><img src="http://imgur.com/G9mMBFT.png" /></p>
+
 <hr>
 
 **<p align="center">Select an example** from the list above to get started ⤴️</p>
 
 <hr>
-
-<p align="center"><img src="http://imgur.com/G9mMBFT.png" /></p>
 
 The examples above cover the following technologies:
 
